@@ -38,6 +38,12 @@ Pizza.prototype.styleFinalCost = function() {
   return newPizza.cost;
 }
 
+Pizza.prototype.toppingsCost = function() {
+  let addCost = parseInt(newPizza.cost);
+
+
+}
+
 let newPizza = new Pizza(0, 0, 0);
 
 $(document).ready(function() {
@@ -63,11 +69,14 @@ $(document).ready(function() {
 
   $("form#toppings").submit(function(event) {
     event.preventDefault();
+    let toppingsPicked = [];
     $("#pricePizza").show();
     $("input:checkbox[name=whatToppings]:checked").each(function() {
-      const toppingsPicked = $(this).val();
+      toppingsPicked.push($(this).val());
     });
+    newPizza.toppings = toppingsPicked;
     $("#pickToppings").hide();
+    newPizza.toppingsCost();
   });
 
   $("#cancelOrder").click(function(event) {
