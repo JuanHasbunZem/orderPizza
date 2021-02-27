@@ -4,10 +4,6 @@ function Pizza(size, style, toppings) {
   this.toppings = toppings;
 }
 
-Pizza.prototype.fullName = function() {
-  return this.size + " " + this.style;
-}
-
 Pizza.prototype.sizeFinalCost = function() {
   if (newPizza.size === "personal") {
     return newPizza.cost = 1;
