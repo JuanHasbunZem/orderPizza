@@ -14,9 +14,81 @@
       <img src="img/pizza.jpg" alt="picture of a pizza, source: Perfect Paleo Pizza, delish.com">
       <br>
       <br>
-      <button type="button" class="btn-success">Create Pizza</button>
+      <button type="button" class="btn-success" id="makePizza">Create Pizza</button>
       <button type="button" class="btn-danger" onclick="location.href='https://google.com';">Cancel</button>
     </div>
+
+    <div id="pickSize">
+      <h1>Pick your Pizza:</h1>
+      <p>Pick the size you want for your pizza</p>
+      <div class="radio">
+        <label>
+          <input type="radio" name="sizes" value="personal" checked>Personal (Feeds 1)
+        </label>
+        <br>
+        <label>
+          <input type="radio" name="sizes" value="small" checked>Small (Feeds 4)
+        </label>
+        <br>
+        <label>
+          <input type="radio" name="sizes" value="medium" checked>Medium (Feeds 6)
+        </label>
+        <br>
+        <label>
+          <input type="radio" name="sizes" value="large" checked>Large (Feeds 8)
+        </label>
+        <br>
+        <label>
+          <input type="radio" name="sizes" value="extra" checked>Extra Large (Feeds 12)
+        </label>
+      </div>
+      <br>
+      <p>Pick your pizza style:</p>
+      <div class="radio">
+        <label>
+          <input type="radio" name="styles" value="hand" checked>Hand Toss
+        </label>
+        <br>
+        <label>
+          <input type="radio" name="styles" value="deep" checked>Deep Dish
+        </label>
+        <br>
+        <label>
+          <input type="radio" name="styles" value="brooklyn" checked>Brooklyn Style
+        </label>
+        <br>
+        <label>
+          <input type="radio" name="styles" value="thin" checked>Thin Crust
+        </label>
+        <br>
+        <label>
+          <input type="radio" name="styles" value="stuffed" checked>Stuff Crust
+        </label>
+      </div>
+      <br>
+      <button type="submit" class="btn-success" id="pickedSizeStyle">Next</button>
+    </div>
+
+    <div id="pickToppings">
+      <h2>Pick your toppings:</h2>
+      <br><br>
+      <form id="toppings">
+        <div class="form-group">
+          <p>What toppings do you want on your pizza?</p>
+          <input type="checkbox" name="whatToppings" value="cheese">Cheese<br>
+          <input type="checkbox" name="whatToppings" value="pep">Pepperoni<br>
+          <input type="checkbox" name="whatToppings" value="ham">Ham<br>
+          <input type="checkbox" name="whatToppings" value="pine">Pineapple<br>
+          <input type="checkbox" name="whatToppings" value="olives">Olives<br>
+          <input type="checkbox" name="whatToppings" value="sausage">Italian Sausage<br>
+          <input type="checkbox" name="whatToppings" value="bell">Bell Peppers<br>
+          <input type="checkbox" name="whatToppings" value="onion">Onions<br>
+          <input type="checkbox" name="whatToppings" value="fish">Anchovies<br>
+        </div>
+        <button type="submit">Create Pizza</button>
+      </form>
+    </div>
+  
 
   </body>
 </html>
