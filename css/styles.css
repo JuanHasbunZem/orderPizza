@@ -6,12 +6,27 @@ body {
 
 #pickSize {
   display: none;
+  text-align: center;
 }
 
 #pickToppings {
   display: none;
+  margin-left: 25%;
+  text-align: left;
+}
+
+#pickToppings h2 {
+  text-align: center;
 }
 
 #pricePizza {
+  display: none;
+}
+
+#pricePizza span {
+  font-size: x-large;
+}
+
+#ordered {
   display: none;
 }

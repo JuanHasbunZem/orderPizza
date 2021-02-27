@@ -11,7 +11,7 @@
     <div id="welcome">
       <h1> Welcome to Pizza'Us!!</h1> 
       <p>If you'd like to order a pizza, please select "Create Pizza" and pick your size and toppings.</p>
-      <img src="img/pizza.jpg" alt="picture of a pizza, source: Perfect Paleo Pizza, delish.com">
+      <img src="img/pizza.jpg" alt="picture of a pizza">
       <br>
       <br>
       <button type="button" class="btn-success" id="makePizza">Create Pizza</button>
@@ -70,20 +70,21 @@
     </div>
 
     <div id="pickToppings">
+      <br><br>
       <h2>Pick your toppings:</h2>
       <br><br>
       <form id="toppings">
         <div class="form-group">
           <p>What toppings do you want on your pizza?</p>
-          <input type="checkbox" name="whatToppings" value="cheese">Cheese<br>
-          <input type="checkbox" name="whatToppings" value="pep">Pepperoni<br>
-          <input type="checkbox" name="whatToppings" value="ham">Ham<br>
-          <input type="checkbox" name="whatToppings" value="pine">Pineapple<br>
-          <input type="checkbox" name="whatToppings" value="olives">Olives<br>
-          <input type="checkbox" name="whatToppings" value="sausage">Italian Sausage<br>
-          <input type="checkbox" name="whatToppings" value="bell">Bell Peppers<br>
-          <input type="checkbox" name="whatToppings" value="onion">Onions<br>
-          <input type="checkbox" name="whatToppings" value="fish">Anchovies<br>
+          <input type="checkbox" name="whatToppings" value="1">Cheese<br>
+          <input type="checkbox" name="whatToppings" value="1">Pepperoni<br>
+          <input type="checkbox" name="whatToppings" value="1">Ham<br>
+          <input type="checkbox" name="whatToppings" value="3">Pineapple<br>
+          <input type="checkbox" name="whatToppings" value="1">Olives<br>
+          <input type="checkbox" name="whatToppings" value="2">Italian Sausage<br>
+          <input type="checkbox" name="whatToppings" value="1">Bell Peppers<br>
+          <input type="checkbox" name="whatToppings" value="1">Onions<br>
+          <input type="checkbox" name="whatToppings" value="4">Anchovies<br>
         </div>
         <button type="submit">Create Pizza</button>
       </form>
@@ -91,8 +92,16 @@
 
     <div id="pricePizza">
       <h1>Your Total is:</h1>
+      <span id="finalCost"></span>
+      <p>Proceed to Order Pizza to confirm and enter your payment information</p>
       <button type="button" class="btn-danger" id="cancelOrder">Cancel Order</button>
       <button type="button" class="btn-success" id="orderPizza">Order Pizza</button>
+    </div>
+
+    <div id="ordered">
+      <h1>Thank you!!</h1>
+      <p>Thank you for ordering a quality pizza from Pizza'Us!! Our drivers will have a piping hot pizza right at your door in 25 minutes or less, or your pizzas free! Enjoy!!!</p>
+      <img src="img/delivery.jpg" alt="young man handing pizza box to woman">
     </div>
   
 
