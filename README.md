@@ -4,7 +4,7 @@
 
 #### By Juan Hasbun
 
-### Last Updated: 2/26/2021
+### Last Updated: 2/27/2021
 
 ## Technologies Used
 
@@ -65,4 +65,30 @@ My initial blueprint of the site before creating tests/code.
  5. After the user finishes selecting all the toppings they want, they'll click the Finish button to proceed. This will run the object through function(s) that will go through and add the cost of each selected option into a final total. 
  6. Then a new div to display the final total of the pizzas cost.  
 
-  
+## Tests
+```
+Describe: let pizza = new Pizza
+     Test: "Will create a new Pizza object with default settings for keywords"
+     Expect(new Pizza).toEqual(pizza { size: 0, style: 0, toppings: 0}
+
+Describe: Pizza.prototype.sizeFinalCost()
+     Test: "Will add a keyword "cost" to the Pizza object and then determine the cost based on the inputted size"
+     Expect(pizza.sizeFinalCost(small)).toEqual(2)
+
+Describe: Pizza.prototype.styleFinalCost
+     Test: "Will update pizza.cost by adding the price of pizza style to pizza.cost"
+     Expect(pizza.styleFinalCost(hand).toEqual(4))
+
+Describe: Pizza.prototype.toppingsCost
+     Test: "Will go through an array of values, based on toppings picked, and add them to pizza.cost"
+     Expect(pizza.toppingsCost("cheese, olives, bell pepper").toEqual(7)
+```
+
+## Future Changes:
+
+A few possible updates I'd like to add to this project would be:
+     * I'd like to include a mini pizza down at the bottom (bottom right corner maybe?) that starts as one slice during the first page and increases in size as the pizza ordering process moves.
+
+     * For the size and styles page, once I have a better understanding for event listeners, id like to convert the radio buttons into graphical buttons of images to present a visual size difference and how each style looks like.
+
+     * Similar to previous, Id like to implement this to the Toppings menu as well. Or maybe a grid containing an image of each topping and underneath each topping a menu bar (or radio buttons) for amount of toppings (none, half serving, normal serving, double serving) then an "Add Toppings" button at the very bottom to process all of the above.
