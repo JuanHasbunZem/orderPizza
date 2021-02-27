@@ -38,10 +38,12 @@ Pizza.prototype.styleFinalCost = function() {
   return newPizza.cost;
 }
 
-Pizza.prototype.toppingsCost = function() {
+Pizza.prototype.toppingsCost = function(indexLength) {
   let addCost = parseInt(newPizza.cost);
-
-
+  for (let i=0; i < indexLength; i++) {
+    addCost += parseInt(newPizza.toppings[i]);
+  }
+  return newPizza.cost = addCost;
 }
 
 let newPizza = new Pizza(0, 0, 0);
@@ -70,13 +72,16 @@ $(document).ready(function() {
   $("form#toppings").submit(function(event) {
     event.preventDefault();
     let toppingsPicked = [];
+    let indexLength = 0;
     $("#pricePizza").show();
     $("input:checkbox[name=whatToppings]:checked").each(function() {
       toppingsPicked.push($(this).val());
+      indexLength++;
     });
     newPizza.toppings = toppingsPicked;
     $("#pickToppings").hide();
-    newPizza.toppingsCost();
+    newPizza.toppingsCost(indexLength);
+    $("#finalCost").append("$" + newPizza.cost + ".00<br>");
   });
 
   $("#cancelOrder").click(function(event) {
@@ -85,4 +90,9 @@ $(document).ready(function() {
     $("#welcome").show();
   });
     
+  $("#orderPizza").click(function(event) {
+    event.preventDefault();
+    $("#pricePizza").hide();
+    $("#ordered").show();
+  });
 });
