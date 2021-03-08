@@ -4,7 +4,7 @@
 
 #### By Juan Hasbun
 
-### Last Updated: 2/27/2021
+### Last Updated: 3/6/2021
 
 ## Technologies Used
 
@@ -30,7 +30,9 @@ Alternatively, follow this link: [Here](https://github.com/JuanHasZem/orderPizza
 
 ## Known Bugs
 
-Currently no known bugs.
+Currently, when you reach the screen to confirm your pizza it'll list the price for the pizza. If you then cancel the order, and reorder a different price the screen will still display the previous pizza price and the new current pizzas price.    
+
+*Did not fix in time for resubmission, but eventually will go back to fix it*
 
 ## License
 

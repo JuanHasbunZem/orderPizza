@@ -18,10 +18,11 @@
       <button type="button" class="btn-danger" onclick="location.href='https://google.com';">Cancel</button>
     </div>
 
-    <div id="pickSize">
+    <div id="pickPizza">
       <h1>Pick your Pizza:</h1>
-      <p>Pick the size you want for your pizza</p>
+      <h2>Pick and create the pizza that you want:</h2>
       <div class="radio">
+        <p><br>Pick your pizza size:</p>
         <label>
           <input type="radio" name="sizes" value="personal" checked>Personal (Feeds 1)
         </label>
@@ -42,7 +43,7 @@
           <input type="radio" name="sizes" value="extra" checked>Extra Large (Feeds 12)
         </label>
       </div>
-      <br>
+      <br><br>
       <p>Pick your pizza style:</p>
       <div class="radio">
         <label>
@@ -64,15 +65,7 @@
         <label>
           <input type="radio" name="styles" value="stuffed" checked>Stuff Crust
         </label>
-      </div>
-      <br>
-      <button type="submit" class="btn-success" id="pickedSizeStyle">Next</button>
-    </div>
-
-    <div id="pickToppings">
-      <br><br>
-      <h2>Pick your toppings:</h2>
-      <br><br>
+      </div><br><br>
       <form id="toppings">
         <div class="form-group">
           <p>What toppings do you want on your pizza?</p>

@@ -4,18 +4,13 @@ body {
   background-color: blue;
 }
 
-#pickSize {
-  display: none;
-  text-align: center;
-}
-
-#pickToppings {
+#pickPizza {
   display: none;
   margin-left: 25%;
   text-align: left;
 }
 
-#pickToppings h2 {
+#pickPizza h2 {
   text-align: center;
 }
 
